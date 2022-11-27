@@ -1,0 +1,39 @@
+body {
+    background: #DDD8C4;
+}
+
+img {
+    width: 22%;
+    height: 35%;
+    padding: 5% 0% 0% 7%;
+    position: absolute;
+}
+
+.RecipeIntroduction {
+    width: 50%;
+    float: right;
+    padding: 4.3% 17% 0% 0%;
+}
+
+h1 {
+    font-family: Heebo, san-serif;
+    color: #2C5364;
+    font-weight: 400;
+    font-size: 36px;
+    margin: 0;
+}
+
+.SectionDivider {
+    border-bottom: 2px solid #0F2027;
+}
+
+p {
+    font-family: Heebo, san-serif;
+    color: #2C5364;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.ingredients {
+    position: fixed;
+}
