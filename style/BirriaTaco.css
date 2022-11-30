@@ -1,39 +1,239 @@
-body {
-    background: #DDD8C4;
-}
-
-img {
-    width: 22%;
-    height: 35%;
-    padding: 5% 0% 0% 7%;
-    position: absolute;
-}
-
-.RecipeIntroduction {
-    width: 50%;
-    float: right;
-    padding: 4.3% 17% 0% 0%;
-}
-
-h1 {
-    font-family: Heebo, san-serif;
-    color: #2C5364;
-    font-weight: 400;
-    font-size: 36px;
-    margin: 0;
-}
-
-.SectionDivider {
-    border-bottom: 2px solid #0F2027;
-}
-
-p {
-    font-family: Heebo, san-serif;
-    color: #2C5364;
-    font-weight: 400;
-    font-size: 18px;
-}
-
-.ingredients {
-    position: fixed;
-}
+        html {
+            margin: 0;
+        }
+        
+        body {
+            background: #DDD8C4;
+            margin: 0;
+        }
+        /* Header Styling */
+        
+        header {
+            background: white;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 100%;
+            grid-template-areas: "a b";
+            height: 80px;
+        }
+        
+        header .header-container {
+            height: 20%;
+        }
+        
+        header a img {
+            max-height: 102%;
+            max-width: 102%;
+            padding: 2% 0 2% 4%;
+        }
+        
+        header a {
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 400;
+            font-size: 36px;
+            padding: 0 0 0 36px;
+        }
+        
+        .Navbar {
+            grid-area: b;
+            justify-content: end;
+        }
+        
+        .Navbar ul {
+            padding: 20px 0 0 20px;
+            margin: 0;
+        }
+        
+        .Navbar ul li {
+            display: inline;
+            padding: 0 50px 0 0;
+        }
+        
+        .Navbar ul li a {
+            text-decoration: none;
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 400;
+            font-size: 18px;
+        }
+        
+        .Navbar ul li button {
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 400;
+            font-size: 18px;
+            border: none;
+            padding: 0;
+        }
+        
+        .uk-dropdown-nav {
+            height: 200px;
+            width: 300px;
+            padding: 0;
+        }
+        
+        .uk-dropdown-nav li {
+            border-top: 1px solid #0F2027;
+        }
+        
+        .uk-dropdown-nav li a {
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 400;
+            font-size: 18px;
+            text-shadow: #0F2027;
+        }
+        
+        header a:hover,
+        .Navbar ul li a:hover,
+        .uk-dropdown-nav a:hover,
+        footer ul li a:hover {
+            color: #0F2027;
+            text-shadow: 1px 1px #2C5364;
+            text-decoration: none;
+        }
+        /* CSS Grid Layout for the recipe */
+        
+        .container {
+            display: grid;
+            grid-template-columns: [first] 5% [line2] 30% [line3] 2% [col4-start] auto [line5]5% [end];
+            grid-template-rows: 20% 80%;
+            grid-template-areas: ".  a .b ." ". c .d .";
+            gap: 3% 3%;
+            /*padding-bottom: 10%;*/
+            padding-top: 4%;
+        }
+        
+        .FoodImage {
+            grid-area: a;
+        }
+        
+        .FoodImage img {
+            border-radius: 12px;
+            max-width: 170%;
+            max-height: 100%;
+        }
+        
+        figcaption {
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 400;
+            font-size: 10px;
+            margin: 0;
+            text-decoration: none;
+            opacity: 70%;
+        }
+        
+        figcaption a {
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 400;
+            font-size: 10px;
+            margin: 0;
+            text-decoration: none;
+            opacity: 70%;
+        }
+        
+        .RecipeIntroduction {
+            grid-area: b;
+        }
+        
+        .RecipeIntroduction h1 {
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 900;
+            font-size: 36px;
+            margin: 0;
+        }
+        
+        .divider {
+            border-bottom: 1.5px solid #0F2027;
+        }
+        
+        .description {
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 400;
+            font-size: 18px;
+            padding: 3px 0 0 0;
+        }
+        /* Ingredients Div */
+        
+        .ingredients {
+            grid-area: c;
+        }
+        
+        .ingredients h3,
+        .instructions h3 {
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 400;
+            font-size: 24px;
+            margin: 0;
+            padding-bottom: 15px;
+        }
+        
+        .ingredients ol,
+        .instructions ol {
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 400;
+            font-size: 16px;
+            margin: 0;
+            list-style: none;
+            padding: 0;
+        }
+        
+        .ingredients h4,
+        .instructions h4 {
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 400;
+            font-size: 18px;
+            margin: 0;
+            padding: 20px 0px 8px 0px;
+        }
+        /*Instruction Div */
+        
+        .instructions {
+            grid-area: d;
+        }
+        /* Footer */
+        
+        .footer-container {
+            display: grid;
+            grid-template-columns: [first] 30% [line2] 50% [end];
+            grid-template-rows: 70px auto;
+            grid-template-areas: "..p .." "..footer..";
+            background: white;
+        }
+        
+        p {
+            grid-area: p;
+            font-family: Heebo, san-serif;
+            color: #2C5364;
+            font-weight: 400;
+            font-size: 18px;
+            margin: 0;
+            padding: 50px 0 0 26%;
+        }
+        
+        footer {
+            grid-area: footer;
+            padding: 4% 0 6% 26%;
+        }
+        
+        footer ul {
+            padding: 0 0 0 0;
+        }
+        
+        footer ul li {
+            display: inline;
+            padding-right: 2%;
+        }
+        
+        footer ul li img {
+            max-width: 5%;
+            max-height: 5%;
+        }

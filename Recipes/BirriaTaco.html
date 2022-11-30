@@ -7,113 +7,183 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Birria Inspired Taco</title>
+    <!-- UIkit CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/css/uikit.min.css" />
+
+    <!-- UIkit JS -->
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.14/dist/js/uikit-icons.min.js"></script>
+
 
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@400;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <div class="FoodImage left">
-        <img src="/Images/BirriaTacos.jpg" alt="A picture of Birria Tacos">
-    </div>
 
-    <div class="RecipeIntroduction right">
-        <h1>Birria inspired Tacos</h1>
-        <div class="SectionDivider right">
-        </div>
-        <p>Birria Tacos are a show-stopping dish that is juicy, cheesy, and salty. It is a Mexican dish that consists of a thick stew stuffed in a corn tortilla and pan-fried. This is my take on the dish and this recipe is not authentic. I only cook for
-            my family and friends using ingredients that are readily available to me. If you do try the recipe, let me know your thoughts! Happy eating! </p>
-    </div>
-
-    <div class="ingredients left">
-        <h3>Ingredients</h3>
-
-        <div class="sauce-ing">
-            <h4>
-                Sauce
-            </h4>
+    <header class="header-container">
+        <a href="/index.html"><img src="/Images/PigletLogoDark.png"> THE PIGLET</a>
+        <div class="Navbar">
             <ul>
-                <li>7 Ancho chile</li>
-                <li>7 Guajillo chile</li>
-                <li>3 Chipotle chile</li>
-                <li>1 White onion</li>
-                <li>7 Garlic cloves</li>
-                <li>1 Orange</li>
-                <li>2 Green Onion </li>
-                <li>3 sprigs Cilantro</li>
-                <li>1 tsp Cumin </li>
-                <li>1 tsp Paprika</li>
-                <li>1 tsp Mexican Oregano</li>
-                <li>1 tsp Instant coffee</li>
-                <li>1 tsp Cocoa powder</li>
-                <li>3 tbsp Soy sauce </li>
-                <li>3 tbsp Fish Sauce</li>
-                <li>1 tsp Honey/Agave</li>
-                <li>1 tsp neutral oil</li>
-                <li>2 cup Broth/Water </li>
-                <li>Salt and pepper to taste</li>
+                <li>
+                    <button class="uk-button uk-button-default" type="button">Recipes</button>
+                    <div uk-dropdown>
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <li><a href="/Recipes/BirriaTaco.html">Current Recipe</a></li>
+                            <li><a href="/Recipes/">Congee Recipe</a></li>
+                            <li><a href="/Recipes/BirriaTaco.html">Pasta Recipe</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li><button class="uk-button uk-button-default" type="button">Ingredients</button>
+                    <div uk-dropdown>
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <li><a href="">Seasonal Ingredients</a></li>
+                            <li><a href="">Meats</a></li>
+                            <li><a href="">Fruits & Vegetables</a></li>
+                        </ul>
+                    </div>
+                </li>
+
+                <li><a href="">ABOUT ME</a></li>
+                <li><button class="uk-button uk-button-default" type="button">Contact Me</button>
+                    <div uk-dropdown>
+                        <ul class="uk-nav uk-dropdown-nav">
+                            <li><a href="https://www.instagram.com/jin.creative/">Instagram</a></li>
+                            <li><a href="https://github.com/Its-Jin">Github</a></li>
+                            <li><a href="https://www.linkedin.com/in/im-jingyi-guo/">Linkedin</a></li>
+                        </ul>
+                </li>
             </ul>
+            </div>
+    </header>
+
+    <div class="container">
+
+        <div class="FoodImage left">
+            <img src="/Images/taco.jpeg" alt="A picture of Birria Tacos">
+            <figcaption><em>Photo by <a href="https://unsplash.com/@jeswinthomas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeswin Thomas</a> on <a href="https://unsplash.com/s/photos/taco?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</em></a>
+            </figcaption>
         </div>
 
-        <div class="stew-ing">
-            <h4>Stew</h4>
-            <ul>
-                <li>3 lbs Short Ribs</li>
-            </ul>
+        <div class="RecipeIntroduction right">
+            <h1>Birria Tacos</h1>
+            <div class="SectionDivider right">
+            </div>
+            <p class="description">Birria Tacos are a show-stopping dish that is juicy, cheesy, and salty. It is a Mexican dish that consists of a thick stew stuffed in a corn tortilla and pan-fried. This is my take on the dish and this recipe is not authentic. I only cook
+                for my family and friends using ingredients that are readily available to me. If you do try the recipe, let me know your thoughts! Happy eating! </p>
         </div>
 
-        <div class="taco-ing">
-            <h4>Tacos</h4>
-            <ul>
-                <li>1/4 cup chopped Cilantro</li>
-                <li>1/4 White onion chopped</li>
-                <li>1 lime</li>
-                <li>12 corn tortillas</li>
-                <li>3 oz Oaxacan cheese or mozzarella</li>
-            </ul>
-        </div>
-    </div>
+        <div class="ingredients left">
+            <h3>Ingredients</h3>
+            <div class="divider"></div>
 
-    <div class="instructions right">
-        <h3>Instructions</h3>
-        <div id="sauce-ins">
-            <h4>Sauce</h4>
-            <ol>
-                <li>Deseed and destem all chilies. Toast chiles in a hot oiled pan until colour darkens. Set aside to cool.</li>
-                <li>Chop onion, garlic, green onion, cilantro into medium size chunks and add to a food processor.</li>
-                <li>Juice the orange and add it to the food processor.</li>
-                <li>Add all spices, oregano, coffee, cocoa powder, soy sauce, fish sauce, honey to the food processor.</li>
-                <li>Add the cooled toasted chilies to the food processor.</li>
-                <li>Blitz on high adding water or broth as needed.</li>
-            </ol>
-
-            <div class="meat-ins">
-                <h4>Braising the meat</h4>
+            <div class="sauce-ing">
+                <h4><strong>Sauce</strong>
+                </h4>
                 <ol>
-                    <li>Cube the meat into managable pieces</li>
-                    <li>Season the meat with salt and black pepper</li>
-                    <li>Add the prepared sauce into the meat and mix well</li>
-                    <li>Let marinate covered until ready to use, minimum 4 hours</li>
-                    <li>After marinating, put the meat with the sauce into a pressure cooker. Ensure that the meat is covered with the sauce</li>
-                    <li>Pressure cook on high for 45mins and release the pressure once cooking is finished</li>
-                    <li>Shred the cooked meat and reserve the stewing liquid</li>
+                    <li>7 Ancho chile</li>
+                    <li>7 Guajillo chile</li>
+                    <li>3 Chipotle chile</li>
+                    <li>1 White onion</li>
+                    <li>7 Garlic cloves</li>
+                    <li>1 Orange</li>
+                    <li>2 Green Onion </li>
+                    <li>3 sprigs Cilantro</li>
+                    <li>1 tsp Cumin </li>
+                    <li>1 tsp Paprika</li>
+                    <li>1 tsp Mexican Oregano</li>
+                    <li>1 tsp Instant coffee</li>
+                    <li>1 tsp Cocoa powder</li>
+                    <li>3 tbsp Soy sauce </li>
+                    <li>3 tbsp Fish Sauce</li>
+                    <li>1 tsp Honey/Agave</li>
+                    <li>1 tsp neutral oil</li>
+                    <li>2 cup Broth/Water </li>
+                    <li>Salt and pepper to taste</li>
                 </ol>
             </div>
 
-            <div class="taco-ins">
-                <h4>Assemble the Taco</h4>
+            <div class="stew-ing">
+                <h4><strong>Stew</strong></h4>
                 <ol>
-                    <li>Mix together chooped onion and cilantro</li>
-                    <li>Shred the cheese</li>
-                    <li>In a non stick pan on medium, dip the tortilla in the reserved stewing liquid and add it to the pan.</li>
-                    <li>Pan fry for 30secs and flip</li>
-                    <li>Add some of the meat and cheese on the tortilla. Fold the tortilla in half and cook until crispy and cheese is melted</li>
-                    <li>Serve with the onion and cilantro mixture. Along with salsa and guac.</li>
+                    <li>3 lbs Short Ribs</li>
                 </ol>
             </div>
 
+            <div class="taco-ing">
+                <h4>
+                    <strong>Taco</strong>
+                </h4>
+                <ol>
+                    <li>1/4 cup chopped Cilantro</li>
+                    <li>1/4 White onion chopped</li>
+                    <li>1 lime</li>
+                    <li>12 corn tortillas</li>
+                    <li>3 oz Oaxacan cheese or mozzarella</li>
+                </ol>
+            </div>
+        </div>
 
+        <div class="instructions right">
+            <h3>Instructions</h3>
+            <div class="divider"></div>
+            <div id="sauce-ins">
+                <h4><strong>Sauce</strong></h4>
+                <ol>
+                    <li>Deseed and destem all chilies. Toast chiles in a hot oiled pan until colour darkens. Set aside to cool.</li>
+                    <li>Chop onion, garlic, green onion, cilantro into medium size chunks and add to a food processor.</li>
+                    <li>Juice the orange and add it to the food processor.</li>
+                    <li>Add all spices, oregano, coffee, cocoa powder, soy sauce, fish sauce, honey to the food processor.</li>
+                    <li>Add the cooled toasted chilies to the food processor.</li>
+                    <li>Blitz on high adding water or broth as needed.</li>
+                </ol>
+
+                <div class="meat-ins">
+                    <h4><strong>Braising the meat</strong></h4>
+                    <ol>
+                        <li>Cube the meat into managable pieces</li>
+                        <li>Season the meat with salt and black pepper</li>
+                        <li>Add the prepared sauce into the meat and mix well</li>
+                        <li>Let marinate covered until ready to use, minimum 4 hours</li>
+                        <li>After marinating, put the meat with the sauce into a pressure cooker. Ensure that the meat is covered with the sauce</li>
+                        <li>Pressure cook on high for 45mins and release the pressure once cooking is finished</li>
+                        <li>Shred the cooked meat and reserve the stewing liquid</li>
+                    </ol>
+                </div>
+
+                <div class="taco-ins">
+                    <h4><strong>Taco</strong></h4>
+                    <ol>
+                        <li>Mix together chooped onion and cilantro</li>
+                        <li>Shred the cheese</li>
+                        <li>In a non stick pan on medium, dip the tortilla in the reserved stewing liquid and add it to the pan.</li>
+                        <li>Pan fry for 30secs and flip</li>
+                        <li>Add some of the meat and cheese on the tortilla. Fold the tortilla in half and cook until crispy and cheese is melted</li>
+                        <li>Serve with the onion and cilantro mixture. Along with salsa and guac.</li>
+                    </ol>
+                </div>
+            </div>
         </div>
     </div>
+
+    <div class="footer-container">
+        <p>Let's Connect!</p>
+        <footer class="links">
+            <ul>
+                <li>
+                    <a href="https://www.instagram.com/jin.creative/"><img src="/Images/instagram.png"></a>
+                </li>
+                <li>
+                    <a href="https://github.com/Its-Jin"><img src="/Images/github.png"></a>
+                </li>
+                <li>
+                    <a href="https://www.linkedin.com/in/im-jingyi-guo/"><img src="/Images/linkedin.png"></a>
+                </li>
+            </ul>
+        </footer>
+    </div>
+
+
 
 
 

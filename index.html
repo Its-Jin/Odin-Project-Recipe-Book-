@@ -18,41 +18,69 @@
 </head>
 
 <body>
-    <div class="uk-animation-toggle" tabindex="0">
-        <div class="uk-card uk-card-default uk-card-body uk-animation-slide-bottom-medium">
-            <div class="landing">
-                <img src="Images/PigletLogo.png" alt="PigletLogo">
-                <H1>Where Passion meets Curiosity</H1>
-                <h1>A Collection of Recipes for The Odin Project</h1>
-            </div>
-
-            <div class="circle-link">
-                <ul class="text-link">
-                    <li id="taco"><a href="Recipes/BirriaTaco.html">Birria Taco</a></li>
-                    <li id="congee"><a href="Recipes/CreamedCornCongee.html">Creamed Corn Congee</a></li>
-                    <li id="pasta"><a href="Recipes/ItalianSausagePasta.html">Italian Sausage Penne</a></li>
-                </ul>
-
-
-                <ul>
-                    <li>
-                        <a href="Recipes/BirriaTaco.html"><img src="Images/BirriaTacos.jpg"></a>
-                    </li>
-
-                    <li>
-                        <a href="Recipes/CreamedCornCongee.html"><img src="Images/CreamCornCongee.jpg"></a>
-                    </li>
-
-                    <li>
-                        <a href="Recipes/ItalianSausagePasta.html"><img src="Images/SausagePasta.jpg"></a>
-                    </li>
-                </ul>
-            </div>
+    <section id="landing-page">
+        <div class="landing">
+            <img src="Images/PigletLogo.png" alt="PigletLogo">
+            <h1>Where Passion meets Curiosity</h1>
+            <h3>A Collection of Recipes for The Odin Project</h3>
         </div>
+    </section>
+
+    <section id="Recipes">
+        <h2>Recipes</h2>
+        <div class="uk-animation-toggle" tabindex="0">
+            <!--<div class="uk-animation-fade">-->
+            <section id="taco">
+                <!--- Receipe 1 Tacos -->
+                <div class="taco">
+                    <div class="uk-text-center">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                            <img src="/Images/BirriaTacos.jpeg">
+                            <!-- <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary">
+                                <a href="Recipes/BirriaTaco.html">Birria Taco</a>
+                            </div>-->
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="congee">
+                <!--- Recipe 2 Congee -->
+                <!-- <a href="https://www.freepik.com/free-photo/chinese-cuisine-congee-with-fish-slices-casserole_17998097.htm#query=congee&position=27&from_view=search&track=sph">Image by dashu83</a> on Freepik-->
+                <div class="congee">
+                    <div class="uk-text-center congee">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                            <img src="/Images/Congee.jpeg">
+                            <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary">
+                                <a href="Recipes/">Slice Fish Congee</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="pasta">
+                <!--- Recipe 3 Pasta -->
+                <!-- Image credit Photo by Mae Mu on Unsplash -->
+                <div class="pasta">
+                    <div class="uk-text-center pasta">
+                        <div class="uk-inline-clip uk-transition-toggle" tabindex="0">
+                            <img src="/Images/SausagePasta.jpeg">
+                            <div class="uk-transition-slide-bottom uk-position-bottom uk-overlay uk-overlay-primary">
+                                <a href="Recipes/">Italian Sausage Penne</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    </section>
     </div>
+    </div>
+
+
+
     <footer>
 
     </footer>
+
 </body>
 
 </html>
