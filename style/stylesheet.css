@@ -1,30 +1,33 @@
+html {
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 78vh;
+}
+
 body {
     margin: 0;
     padding: 0;
 }
 
 section {
-    scroll-snap-align: start;
+    scroll-snap-align: end;
 }
 
 
 /* Section - Landing Page - */
 
 #landing-page {
-    background: #0F2027;
-    /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #2C5364, #203A43, #0F2027);
-    /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to left, #2C5364, #203A43, #0F2027);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    height: 85vh;
-    width: 100vw;
+    background: #141514;
+    height: 80vh;
+    width: 100%;
 }
 
 .landing {
+    /* Website Landing Page */
     display: grid;
     grid-template-columns: 5% 30% 20% 30% 5%;
-    grid-template-rows: 5% 10% 5% 5%;
+    grid-template-rows: 5% 8% 5% 5%;
     gap: 2% 2%;
     grid-template-areas: '. . . . .' '. . a . .' '. b b b .' '. c c c .';
     justify-content: center;
@@ -38,39 +41,193 @@ section {
 .landing img {
     /* Logo */
     grid-area: a;
-    width: 25%;
-    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
     padding-bottom: 2%;
 }
 
 .landing h1 {
+    /* Website Title Message */
     grid-area: b;
-    font-weight: Heebo;
+    font-family: Heebo;
     color: #DDD8C4;
     margin: 0;
+    font-size: 2.5vw;
 }
 
 .landing h3 {
+    /* Website subtitle Message */
     grid-area: c;
-    font-weight: Heebo;
+    font-family: Heebo;
     color: #DDD8C4;
     margin: 0;
     opacity: 80%;
+    font-size: 1.5vw;
 }
 
-h2 {
-    height: 15vh;
+
+/* Dividing Section */
+
+#divider {
+    height: 25vh;
+    color: #141514;
+    text-align: center;
+    padding: 0 0 5vh 0;
 }
 
-#taco {
+#divider ul li h3 {
+    font-family: Heebo;
+    font-size: 2.5vw;
+    margin: 0;
+    padding-top: 3vh;
+}
+
+ul {
+    padding: 6vh 0 0 0;
+    opacity: 80%;
+}
+
+ul li {
+    display: inline-block;
+    padding: 0 2vw 0 0;
+}
+
+.spaceer {
+    background: #0F2027;
+    width: 30vw;
+    height: 0.35vh;
+}
+
+
+/* Recipe Sections - Sectional Styling */
+
+.recipe {
     display: grid;
-    grid-template-columns: 50vw 50vw;
-    grid-template-rows: 100vh;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 90;
     grid-template-areas: 'a b';
+    align-items: center;
     background: #141514;
 }
 
-#taco img {
+.recipe-image img {
     grid-area: a;
-    height: 100vh;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.description {
+    grid-area: b;
+    font-family: Heebo;
+    color: #DDD8C4;
+    max-width: 75%;
+    padding: 0 0 0 10%;
+}
+
+.description h3 {
+    font-family: Heebo;
+    color: #DDD8C4;
+    font-size: 7vw;
+}
+
+.description p {
+    font-family: Heebo;
+    font-size: 1vw;
+}
+
+
+/* Recipe Sections - Recipe Specific */
+
+
+/*  Receipe 1 - Taco */
+
+
+/*  Receipe 2 - Congee */
+
+.recipe-congee {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 'a b';
+    align-items: center;
+    background: #F5F8F2;
+}
+
+.recipe-image-congee {
+    grid-area: b;
+    max-height: 100%;
+    max-width: 100%;
+}
+
+.description-congee {
+    grid-area: a;
+    font-family: Heebo;
+    color: #141514;
+    max-width: 75%;
+    padding: 0 0 0 10%;
+}
+
+.description-congee h3 {
+    font-family: Heebo;
+    color: #141514;
+    font-size: 7vw;
+}
+
+.description-congee p {
+    font-family: Heebo;
+    font-size: 1vw;
+}
+
+.credit a {
+    font-family: Heebo;
+    text-decoration: none;
+    color: #DDD8C4;
+    opacity: 80%;
+}
+
+.credit-congee a {
+    font-family: Heebo;
+    text-decoration: none;
+    color: #0F2027;
+    opacity: 80%;
+}
+
+
+/* Footer */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: [first] 30% [line2] 50% [end];
+    grid-template-rows: 70px auto;
+    grid-template-areas: "..p .." "..footer..";
+    background: #F5F8F2;
+}
+
+h4 {
+    grid-area: p;
+    font-family: Heebo, san-serif;
+    color: #141514;
+    font-weight: 400;
+    font-size: 18px;
+    margin: 0;
+    padding: 10% 0 0 32%;
+}
+
+footer {
+    grid-area: footer;
+    padding: 8% 0 6% 32.5%;
+}
+
+footer ul {
+    padding: 0 0 0 0;
+}
+
+footer ul li {
+    display: inline;
+    padding-right: 3%;
+}
+
+footer ul li img {
+    max-width: 5%;
+    max-height: 5%;
 }
