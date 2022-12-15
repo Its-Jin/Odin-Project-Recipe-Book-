@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <link href="/style/BirriaTaco.css" rel="stylesheet">
+    <link href="/Users/jin/Documents/Pathway to Tech/Odin Project /Repos/Odin-Project-Recipe-Book-/style/BirriaTaco.css" rel="stylesheet">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,22 +19,28 @@
 </head>
 
 <body>
+    <header>
+        <!-- Header & Nav Bar-->
+        <div id="logo">
+            <a href="/Users/jin/Documents/Pathway to Tech/Odin Project /Repos/Odin-Project-Recipe-Book-/index.html"><img src="/Users/jin/Documents/Pathway to Tech/Odin Project /Repos/Odin-Project-Recipe-Book-/Images/PigletLogo.png">The Piglet</a>
+        </div>
 
-    <header class="header-container">
-        <a href="/index.html"><img src="/Images/PigletLogoDark.png"> THE PIGLET</a>
-        <div class="Navbar">
-            <ul>
-                <li>
+        <ul id="nav">
+            <li>
+                <div class="uk-inline">
                     <button class="uk-button uk-button-default" type="button">Recipes</button>
                     <div uk-dropdown>
                         <ul class="uk-nav uk-dropdown-nav">
-                            <li><a href="/Recipes/BirriaTaco.html">Current Recipe</a></li>
+                            <li><a href="/Users/jin/Documents/Pathway to Tech/Odin Project /Repos/Odin-Project-Recipe-Book-/Recipes/BirriaTaco.html">Taco Recipe</a></li>
                             <li><a href="/Recipes/">Congee Recipe</a></li>
                             <li><a href="/Recipes/BirriaTaco.html">Pasta Recipe</a></li>
                         </ul>
                     </div>
-                </li>
-                <li><button class="uk-button uk-button-default" type="button">Ingredients</button>
+                </div>
+            </li>
+            <li>
+                <div class="uk-inline">
+                    <button class="uk-button uk-button-default" type="button">Ingredients</button>
                     <div uk-dropdown>
                         <ul class="uk-nav uk-dropdown-nav">
                             <li><a href="">Seasonal Ingredients</a></li>
@@ -42,148 +48,199 @@
                             <li><a href="">Fruits & Vegetables</a></li>
                         </ul>
                     </div>
-                </li>
-
-                <li><a href="">ABOUT ME</a></li>
-                <li><button class="uk-button uk-button-default" type="button">Contact Me</button>
+                </div>
+            </li>
+            <li>
+                <div class="uk-inline">
+                    <button class="uk-button uk-button-default" type="button">Contact ME</button>
                     <div uk-dropdown>
                         <ul class="uk-nav uk-dropdown-nav">
                             <li><a href="https://www.instagram.com/jin.creative/">Instagram</a></li>
-                            <li><a href="https://github.com/Its-Jin">Github</a></li>
+                            <li><a href="https://github.com/Its-Jin">GitHub</a></li>
                             <li><a href="https://www.linkedin.com/in/im-jingyi-guo/">Linkedin</a></li>
                         </ul>
-                </li>
-            </ul>
-            </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="uk-inline"><button class="uk-button uk-button-default" type="button">About Me</button></div>
+            </li>
+        </ul>
     </header>
 
-    <div class="container">
-
-        <div class="FoodImage left">
-            <img src="/Images/taco.jpeg" alt="A picture of Birria Tacos">
-            <figcaption><em>Photo by <a href="https://unsplash.com/@jeswinthomas?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Jeswin Thomas</a> on <a href="https://unsplash.com/s/photos/taco?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</em></a>
-            </figcaption>
+    <section id="Intro">
+        <!-- Product Introduction -->
+        <img src="/Users/jin/Documents/Pathway to Tech/Odin Project /Repos/Odin-Project-Recipe-Book-/Images/BirriaTacos.jpeg">
+        <div id="Intro-description">
+            <h1>Birria Taco</h1>
+            <ul id="Intro-sectional-links">
+                <li><a href="#Intro">Overview</a>
+                </li>
+                <li><a href="#ingredients">Ingredients</a></li>
+                <li><a href="#instructions">Instructions</a></li>
+            </ul>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Amet justo donec enim diam. Sagittis eu volutpat odio facilisis mauris sit. Adipiscing diam donec adipiscing tristique
+                risus nec feugiat in. Nunc mattis enim ut tellus elementum sagittis vitae et.</p>
+            <p>Birria Taco has essentially 3 components at auctor urna nunc id </p>
         </div>
+    </section>
 
-        <div class="RecipeIntroduction right">
-            <h1>Birria Tacos</h1>
-            <div class="SectionDivider right">
+
+    <section id="ingredients">
+        <!-- Recipe Ingredients-->
+        <h3>Ingredients</h3>
+        <div id="ingredients-container">
+            <div id="ingredients-1">
+                <h4>Sauce</h4>
+                <div class="list">
+                    <ol class="numbers">
+                        <li>7</li>
+                        <li>7</li>
+                        <li>3</li>
+                        <li>1</li>
+                        <li>7</li>
+                        <li>1</li>
+                        <li>2</li>
+                        <li>3</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>3</li>
+                        <li>3</li>
+                        <li>1</li>
+                        <li>1</li>
+                        <li>2</li>
+                    </ol>
+                    <ol class="items">
+                        <li>Ancho chile</li>
+                        <li>Guajillo chile</li>
+                        <li>Chipotle chile</li>
+                        <li>White onion</li>
+                        <li>Garlic cloves</li>
+                        <li>Orange</li>
+                        <li>Green Onion </li>
+                        <li>sprigs Cilantro</li>
+                        <li>tsp Cumin </li>
+                        <li>tsp Paprika</li>
+                        <li>tsp Mexican Oregano</li>
+                        <li>tsp Instant coffee</li>
+                        <li>tsp Cocoa powder</li>
+                        <li>tbsp Soy sauce </li>
+                        <li>tbsp Fish Sauce</li>
+                        <li>tsp Honey/Agave</li>
+                        <li>tsp neutral oil</li>
+                        <li>cup Broth/Water </li>
+                        <li>Salt and pepper to taste</li>
+                    </ol>
+                </div>
             </div>
-            <p class="description">Birria Tacos are a show-stopping dish that is juicy, cheesy, and salty. It is a Mexican dish that consists of a thick stew stuffed in a corn tortilla and pan-fried. This is my take on the dish and this recipe is not authentic. I only cook
-                for my family and friends using ingredients that are readily available to me. If you do try the recipe, let me know your thoughts! Happy eating! </p>
-        </div>
 
-        <div class="ingredients left">
-            <h3>Ingredients</h3>
-            <div class="divider"></div>
-
-            <div class="sauce-ing">
-                <h4><strong>Sauce</strong>
-                </h4>
-                <ol>
-                    <li>7 Ancho chile</li>
-                    <li>7 Guajillo chile</li>
-                    <li>3 Chipotle chile</li>
-                    <li>1 White onion</li>
-                    <li>7 Garlic cloves</li>
-                    <li>1 Orange</li>
-                    <li>2 Green Onion </li>
-                    <li>3 sprigs Cilantro</li>
-                    <li>1 tsp Cumin </li>
-                    <li>1 tsp Paprika</li>
-                    <li>1 tsp Mexican Oregano</li>
-                    <li>1 tsp Instant coffee</li>
-                    <li>1 tsp Cocoa powder</li>
-                    <li>3 tbsp Soy sauce </li>
-                    <li>3 tbsp Fish Sauce</li>
-                    <li>1 tsp Honey/Agave</li>
-                    <li>1 tsp neutral oil</li>
-                    <li>2 cup Broth/Water </li>
-                    <li>Salt and pepper to taste</li>
-                </ol>
-            </div>
-
-            <div class="stew-ing">
-                <h4><strong>Stew</strong></h4>
-                <ol>
-                    <li>3 lbs Short Ribs</li>
-                </ol>
-            </div>
-
-            <div class="taco-ing">
+            <div id="ingredients-2">
                 <h4>
-                    <strong>Taco</strong>
+                    Stew
                 </h4>
+                <div class="list">
+                    <ol class="numbers">
+                        <li>3</li>
+                    </ol>
+
+                    <ol class="items">
+                        <li>lbs Short Ribs</li>
+                    </ol>
+                </div>
+
+            </div>
+            <div id="ingredients-3">
+                <h4>
+                    Taco
+                </h4>
+
+                <div class="list">
+                    <ol class="numbers">
+                        <li>1/4</li>
+                        <li>1/4</li>
+                        <li>1</li>
+                        <li>12</li>
+                        <li>3</li>
+                    </ol>
+                    <ol class="items">
+                        <li>cup chopped Cilantro</li>
+                        <li>White onion chopped</li>
+                        <li>Lime</li>
+                        <li>Corn tortillas</li>
+                        <li>oz Oaxacan cheese or mozzarella</li>
+                    </ol>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="instructions">
+        <h3>Instructions</h3>
+        <div class="instruction-section">
+            <div class="circle"></div>
+            <h4>Sauce</h4>
+            <div class="instruction-box">
+                <div class="border"></div>
                 <ol>
-                    <li>1/4 cup chopped Cilantro</li>
-                    <li>1/4 White onion chopped</li>
-                    <li>1 lime</li>
-                    <li>12 corn tortillas</li>
-                    <li>3 oz Oaxacan cheese or mozzarella</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 </ol>
             </div>
         </div>
 
-        <div class="instructions right">
-            <h3>Instructions</h3>
-            <div class="divider"></div>
-            <div id="sauce-ins">
-                <h4><strong>Sauce</strong></h4>
+        <div class="instruction-section" id="stew">
+            <div class="circle"></div>
+            <h4>Stew</h4>
+            <div class="instruction-box" id="stew">
+                <div class="border"></div>
                 <ol>
-                    <li>Deseed and destem all chilies. Toast chiles in a hot oiled pan until colour darkens. Set aside to cool.</li>
-                    <li>Chop onion, garlic, green onion, cilantro into medium size chunks and add to a food processor.</li>
-                    <li>Juice the orange and add it to the food processor.</li>
-                    <li>Add all spices, oregano, coffee, cocoa powder, soy sauce, fish sauce, honey to the food processor.</li>
-                    <li>Add the cooled toasted chilies to the food processor.</li>
-                    <li>Blitz on high adding water or broth as needed.</li>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                 </ol>
-
-                <div class="meat-ins">
-                    <h4><strong>Braising the meat</strong></h4>
-                    <ol>
-                        <li>Cube the meat into managable pieces</li>
-                        <li>Season the meat with salt and black pepper</li>
-                        <li>Add the prepared sauce into the meat and mix well</li>
-                        <li>Let marinate covered until ready to use, minimum 4 hours</li>
-                        <li>After marinating, put the meat with the sauce into a pressure cooker. Ensure that the meat is covered with the sauce</li>
-                        <li>Pressure cook on high for 45mins and release the pressure once cooking is finished</li>
-                        <li>Shred the cooked meat and reserve the stewing liquid</li>
-                    </ol>
-                </div>
-
-                <div class="taco-ins">
-                    <h4><strong>Taco</strong></h4>
-                    <ol>
-                        <li>Mix together chooped onion and cilantro</li>
-                        <li>Shred the cheese</li>
-                        <li>In a non stick pan on medium, dip the tortilla in the reserved stewing liquid and add it to the pan.</li>
-                        <li>Pan fry for 30secs and flip</li>
-                        <li>Add some of the meat and cheese on the tortilla. Fold the tortilla in half and cook until crispy and cheese is melted</li>
-                        <li>Serve with the onion and cilantro mixture. Along with salsa and guac.</li>
-                    </ol>
-                </div>
             </div>
         </div>
-    </div>
 
-    <div class="footer-container">
-        <p>Let's Connect!</p>
+        <div class="instruction-section">
+            <div class="circle"></div>
+            <h4>Assemblying the Tacos</h4>
+            <div class="instruction-box">
+                <div class="border"></div>
+                <ol>
+                    <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                    <li> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <section class="end">
+        <h3>Enjoy!</h3>
+    </section>
+
+    <section class="footer-container">
+        <h4>Let's Connect!</h4>
         <footer class="links">
             <ul>
                 <li>
-                    <a href="https://www.instagram.com/jin.creative/"><img src="/Images/instagram.png"></a>
+                    <a href="https://www.instagram.com/jin.creative/"><img src="/Users/jin/Documents/Pathway to Tech/Odin Project /Repos/Odin-Project-Recipe-Book-/Images/instagram-light.png"></a>
                 </li>
                 <li>
-                    <a href="https://github.com/Its-Jin"><img src="/Images/github.png"></a>
+                    <a href="https://github.com/Its-Jin"><img src="/Users/jin/Documents/Pathway to Tech/Odin Project /Repos/Odin-Project-Recipe-Book-/Images/github-light.png"></a>
                 </li>
                 <li>
-                    <a href="https://www.linkedin.com/in/im-jingyi-guo/"><img src="/Images/linkedin.png"></a>
+                    <a href="https://www.linkedin.com/in/im-jingyi-guo/"><img src="/Users/jin/Documents/Pathway to Tech/Odin Project /Repos/Odin-Project-Recipe-Book-/Images/linkedin-light.png"></a>
                 </li>
             </ul>
         </footer>
-    </div>
-
-
+    </section>
 
 
 

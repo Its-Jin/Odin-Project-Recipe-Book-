@@ -1,239 +1,359 @@
-        html {
-            margin: 0;
-        }
-        
-        body {
-            background: #DDD8C4;
-            margin: 0;
-        }
-        /* Header Styling */
-        
-        header {
-            background: white;
-            display: grid;
-            grid-template-columns: 50% 50%;
-            grid-template-rows: 100%;
-            grid-template-areas: "a b";
-            height: 80px;
-        }
-        
-        header .header-container {
-            height: 20%;
-        }
-        
-        header a img {
-            max-height: 102%;
-            max-width: 102%;
-            padding: 2% 0 2% 4%;
-        }
-        
-        header a {
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 400;
-            font-size: 36px;
-            padding: 0 0 0 36px;
-        }
-        
-        .Navbar {
-            grid-area: b;
-            justify-content: end;
-        }
-        
-        .Navbar ul {
-            padding: 20px 0 0 20px;
-            margin: 0;
-        }
-        
-        .Navbar ul li {
-            display: inline;
-            padding: 0 50px 0 0;
-        }
-        
-        .Navbar ul li a {
-            text-decoration: none;
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 400;
-            font-size: 18px;
-        }
-        
-        .Navbar ul li button {
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 400;
-            font-size: 18px;
-            border: none;
-            padding: 0;
-        }
-        
-        .uk-dropdown-nav {
-            height: 200px;
-            width: 300px;
-            padding: 0;
-        }
-        
-        .uk-dropdown-nav li {
-            border-top: 1px solid #0F2027;
-        }
-        
-        .uk-dropdown-nav li a {
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 400;
-            font-size: 18px;
-            text-shadow: #0F2027;
-        }
-        
-        header a:hover,
-        .Navbar ul li a:hover,
-        .uk-dropdown-nav a:hover,
-        footer ul li a:hover {
-            color: #0F2027;
-            text-shadow: 1px 1px #2C5364;
-            text-decoration: none;
-        }
-        /* CSS Grid Layout for the recipe */
-        
-        .container {
-            display: grid;
-            grid-template-columns: [first] 5% [line2] 30% [line3] 2% [col4-start] auto [line5]5% [end];
-            grid-template-rows: 20% 80%;
-            grid-template-areas: ".  a .b ." ". c .d .";
-            gap: 3% 3%;
-            /*padding-bottom: 10%;*/
-            padding-top: 4%;
-        }
-        
-        .FoodImage {
-            grid-area: a;
-        }
-        
-        .FoodImage img {
-            border-radius: 12px;
-            max-width: 170%;
-            max-height: 100%;
-        }
-        
-        figcaption {
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 400;
-            font-size: 10px;
-            margin: 0;
-            text-decoration: none;
-            opacity: 70%;
-        }
-        
-        figcaption a {
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 400;
-            font-size: 10px;
-            margin: 0;
-            text-decoration: none;
-            opacity: 70%;
-        }
-        
-        .RecipeIntroduction {
-            grid-area: b;
-        }
-        
-        .RecipeIntroduction h1 {
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 900;
-            font-size: 36px;
-            margin: 0;
-        }
-        
-        .divider {
-            border-bottom: 1.5px solid #0F2027;
-        }
-        
-        .description {
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 400;
-            font-size: 18px;
-            padding: 3px 0 0 0;
-        }
-        /* Ingredients Div */
-        
-        .ingredients {
-            grid-area: c;
-        }
-        
-        .ingredients h3,
-        .instructions h3 {
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 400;
-            font-size: 24px;
-            margin: 0;
-            padding-bottom: 15px;
-        }
-        
-        .ingredients ol,
-        .instructions ol {
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 400;
-            font-size: 16px;
-            margin: 0;
-            list-style: none;
-            padding: 0;
-        }
-        
-        .ingredients h4,
-        .instructions h4 {
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 400;
-            font-size: 18px;
-            margin: 0;
-            padding: 20px 0px 8px 0px;
-        }
-        /*Instruction Div */
-        
-        .instructions {
-            grid-area: d;
-        }
-        /* Footer */
-        
-        .footer-container {
-            display: grid;
-            grid-template-columns: [first] 30% [line2] 50% [end];
-            grid-template-rows: 70px auto;
-            grid-template-areas: "..p .." "..footer..";
-            background: white;
-        }
-        
-        p {
-            grid-area: p;
-            font-family: Heebo, san-serif;
-            color: #2C5364;
-            font-weight: 400;
-            font-size: 18px;
-            margin: 0;
-            padding: 50px 0 0 26%;
-        }
-        
-        footer {
-            grid-area: footer;
-            padding: 4% 0 6% 26%;
-        }
-        
-        footer ul {
-            padding: 0 0 0 0;
-        }
-        
-        footer ul li {
-            display: inline;
-            padding-right: 2%;
-        }
-        
-        footer ul li img {
-            max-width: 5%;
-            max-height: 5%;
-        }
+html {
+    font-family: Heebo;
+    scroll-snap-type: mandatory;
+    scroll-snap-type: y mandatory;
+    overflow-y: scroll;
+    height: 78vh;
+}
+
+body {
+    background: #F5F8F2;
+}
+
+section {
+    scroll-snap-align: end;
+}
+
+
+/*----------------------------------------------------------------*/
+
+
+/* Header */
+
+header {
+    background: #141514;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 10vh;
+    grid-template-areas: 'a b';
+}
+
+
+/* Header - Logo */
+
+header #logo {
+    grid-area: a;
+    padding: 2vh 0 0 0;
+    text-transform: uppercase;
+}
+
+header #logo a {
+    font-family: Heebo;
+    color: #DDD8C4;
+    font-size: 32px;
+}
+
+header #logo img {
+    height: 50%;
+    padding: 0 2vw 0 3vw;
+}
+
+
+/* Header - Nav Bar */
+
+#nav {
+    grid-area: b;
+    min-height: 50%;
+    max-height: fit;
+    padding: 0.7vh 0 0 0;
+}
+
+#nav li {
+    display: inline-block;
+    color: #DDD8C4;
+}
+
+#nav button {
+    color: #DDD8C4;
+    font-size: 20px;
+    border: none;
+}
+
+.uk-nav li {
+    display: block;
+}
+
+
+/*----------------------------------------------------------------*/
+
+
+/* Section */
+
+
+/* Section - Intro */
+
+#Intro {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 85vh;
+    gap: 0 4vw;
+    grid-template-areas: 'a b';
+    justify-items: center;
+    background: #F5F8F2;
+}
+
+#Intro img {
+    /* img left */
+    grid-area: a;
+    max-height: 100%;
+    width: 100%;
+}
+
+#Intro #Intro-description {
+    /* description right */
+    grid-area: b;
+    max-width: 65%;
+    max-height: 80%;
+    height: 70%;
+    padding: 17vh 6vw 0 0;
+}
+
+#Intro h1 {
+    font-weight: 900;
+    font-size: 10vh;
+}
+
+#Intro ul {
+    /* Links in Description */
+    padding: 2vh 0 0 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#Intro ul li {
+    display: inline-block;
+    text-decoration: none;
+    font-family: Heebo;
+    font-size: 3vh;
+}
+
+#Intro ul li a {
+    color: #141514;
+}
+
+
+/*-----------------------------------------------------------------*/
+
+
+/* Section - Ingredients */
+
+#ingredients {
+    background: #141514;
+}
+
+#ingredients-container {
+    /* formatting of section */
+    display: grid;
+    grid-template-columns: 5% 25% 25% 25% 5%;
+    grid-template-rows: auto;
+    gap: 0 3%;
+    grid-template-areas: '. a b c .';
+}
+
+#ingredients-1 {
+    grid-area: a;
+}
+
+#ingredients-2 {
+    grid-area: b;
+}
+
+#ingredients-3 {
+    grid-area: c;
+}
+
+#ingredients h3 {
+    /* Section Heading */
+    font-size: 10vh;
+    color: #DDD8C4;
+    text-align: center;
+    height: 20vh;
+    padding: 7vh 0 0 0;
+}
+
+#ingredients-container h4 {
+    /* Heading for each part of part of recipe */
+    padding: 0;
+    margin: 0;
+    color: #DDD8C4;
+    font-size: 4vh;
+    text-align: center;
+}
+
+.list {
+    /* List of ingredients in parts of recipe */
+    display: grid;
+    grid-template-columns: 35% 65%;
+    grid-template-areas: 'a b';
+    padding: 2vh 0 2vh 2vw;
+    min-height: 90vh;
+    max-height: fit-content;
+    opacity: 80%;
+}
+
+#ingredients-container ol {
+    padding: 0;
+}
+
+.list .numbers {
+    grid-area: a;
+}
+
+.list .numbers li {
+    text-align: right;
+}
+
+.list .items {
+    grid-area: b;
+    margin: 0;
+}
+
+#ingredients-container li {
+    /* all list items within ingredients list */
+    color: #DDD8C4;
+    list-style: none;
+    padding: 1vh 2vw 0 0;
+}
+
+
+/*-------------------------------------------------------------------------*/
+
+
+/* Instructions */
+
+#instructions {
+    background: #F5F8F2;
+}
+
+#instructions h3 {
+    /* Section Heading */
+    font-size: 10vh;
+    color: #141514;
+    text-align: center;
+    height: 20vh;
+    padding: 7vh 0 0 2vw;
+    margin: 0;
+}
+
+.circle {
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    background: #141514;
+    margin: 10vh 0 0 50vw;
+}
+
+#instructions h4 {
+    color: #141514;
+    font-size: 4vh;
+    position: relative;
+    top: -4vh;
+    margin: 0 0 0 60%;
+    padding: 0;
+}
+
+.instruction-box {
+    display: grid;
+    grid-template-columns: 51vw 49vw;
+    grid-template-rows: auto;
+    grid-template-areas: 'a b';
+    min-height: 40vh;
+}
+
+.border {
+    grid-area: a;
+    border-right: 15px solid #141514;
+}
+
+.instruction-box ol {
+    grid-area: b;
+    max-width: 50%;
+    margin: 1vh 0 0 15%;
+}
+
+#stew {
+    grid-template-columns: 50.25vw 49.75vw;
+}
+
+#stew h4 {
+    color: #141514;
+    font-size: 4vh;
+    position: relative;
+    top: -4vh;
+    margin: 0 0 0 35%;
+    padding: 0;
+}
+
+#stew .border {
+    grid-area: b;
+    border-left: 15px solid #141514;
+    border-right: none;
+}
+
+#stew ol {
+    grid-area: a;
+    max-width: 50%;
+    margin: 1vh 0 0 27%;
+}
+
+#stew ol li {
+    text-align: right;
+}
+
+
+/*-----------------------------------------------------------------*/
+
+
+/* Section - END */
+
+.end h3 {
+    background: #F5F8F2;
+    text-align: center;
+    font-size: 5vh;
+    color: #141514;
+    height: 10vh;
+    padding: 10vh 0 0 2vw;
+}
+
+
+/*------------------------------------------------------------------*/
+
+
+/* Footer */
+
+.footer-container {
+    display: grid;
+    grid-template-columns: [first] 30% [line2] 50% [end];
+    grid-template-rows: 70px auto;
+    grid-template-areas: "..p .." "..footer..";
+    background: #141514;
+}
+
+.footer-container h4 {
+    grid-area: p;
+    font-family: Heebo, san-serif;
+    color: #F5F8F2;
+    font-weight: 400;
+    font-size: 3vh;
+    margin: 0;
+    padding: 10% 0 0 32%;
+}
+
+footer {
+    grid-area: footer;
+    padding: 8% 0 6% 32.5%;
+}
+
+footer ul {
+    padding: 1% 0 0 0.75%;
+}
+
+footer ul li {
+    display: inline;
+    padding-right: 5%;
+}
+
+footer ul li img {
+    max-width: 5%;
+    max-height: 5%;
+}
